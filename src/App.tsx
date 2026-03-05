@@ -42,7 +42,7 @@ function App() {
   };
 
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/919296750115?text=Hi%2C%20I%20want%20to%20know%20about%20admission%20at%20DISHA%20International%20School', '_blank');
+    window.open('https://wa.me/919296750115?text=नमस्ते%2C%20मैं%20दिशा%20इंटरनेशनल%20स्कूल%20में%20प्रवेश%20के%20बारे%20में%20जानना%20चाहता%20हूँ', '_blank');
   };
 
   const handleCallClick = () => {
@@ -50,7 +50,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white font-sans">
       {/* Navigation */}
       <nav className="border-b border-gray-200 sticky top-0 z-40 shadow-sm" style={{ backgroundColor: '#FEFBEC' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -60,7 +60,7 @@ function App() {
             </div>
             <div className="flex items-center gap-4">
               <Button onClick={() => scrollToSection('apply')} variant="primary" size="sm">
-                Apply Now
+                अभी आवेदन करें
               </Button>
             </div>
           </div>
@@ -78,26 +78,33 @@ function App() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Column - Content */}
             <div className="order-2 lg:order-1">
+              {/* Local Hook / Greeting */}
+              <div className="mb-4">
+                <span className="inline-block bg-emerald-100 text-emerald-800 text-sm md:text-base font-bold px-4 py-2 rounded-full border border-emerald-300 shadow-sm">
+                  🙏 जोहार गोड्डा! अब अपन गोड्डा में भी IITian वाली पढ़ाई...
+                </span>
+              </div>
+
               {/* Admission Badge */}
               <div className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-600 to-emerald-500 text-white px-5 py-2.5 rounded-full text-sm font-bold mb-6 shadow-lg">
                 <span className="w-2 h-2 bg-white rounded-full animate-ping"></span>
-                🎓 Admissions Open 2026-27 — Seats Filling Fast!
+                🎓 प्रवेश प्रारंभ 2026-27 — सीटें तेजी से भर रही हैं!
               </div>
 
               {/* Main Headline */}
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-gray-900 leading-[1.1] mb-6">
-                Give Your Child
+                अपने बच्चे को दें
                 <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-emerald-500">
-                  An IITian's Edge
+                  एक IITian वाली बढ़त
                 </span>
                 <br />
-                <span className="text-3xl sm:text-4xl lg:text-5xl text-gray-700 font-bold">from Day One</span>
+                <span className="text-3xl sm:text-4xl lg:text-5xl text-gray-700 font-bold">पहले दिन से ही</span>
               </h1>
 
               {/* Subheadline */}
               <p className="text-xl sm:text-2xl text-gray-700 mb-10 leading-relaxed">
-                India's first <span className="text-emerald-600 font-bold">IITian-Led ICSE School</span> in Godda — building future doctors, engineers &amp; innovators.
+                गोड्डा का पहला <span className="text-emerald-600 font-bold">IITian द्वारा संचालित ICSE स्कूल</span> — जो भविष्य के डॉक्टर, इंजीनियर और इनोवेटर बना रहा है।
               </p>
 
               {/* CTA Buttons */}
@@ -109,16 +116,16 @@ function App() {
                   className="flex items-center justify-center gap-2 shadow-xl hover:shadow-emerald-200 transform hover:-translate-y-0.5 text-lg font-bold"
                 >
                   <MessageCircle className="w-6 h-6" />
-                  Apply on WhatsApp Now
+                  WhatsApp पर  अभी संपर्क करें
                 </Button>
                 <Button
                   onClick={handleCallClick}
                   variant="secondary"
                   size="lg"
-                  className="flex items-center justify-center gap-2 border-2 border-gray-300 hover:border-gray-400"
+                  className="flex items-center justify-center gap-2 border-2 border-gray-300 hover:border-gray-400 font-bold"
                 >
                   <Phone className="w-5 h-5" />
-                  Call: 9296750115
+                  कॉल करें: 9296750115
                 </Button>
               </div>
             </div>
@@ -127,19 +134,20 @@ function App() {
             <div className="order-1 lg:order-2">
               <img
                 src="/school-hero.png"
-                alt="Happy students in DISHA International School modern classroom"
+                alt="दिशा इंटरनेशनल स्कूल की आधुनिक कक्षा में खुश छात्र"
                 className="rounded-3xl shadow-2xl w-full object-cover"
               />
             </div>
           </div>
         </div>
       </section>
+
       {/* How Admissions Work */}
       <section className="py-14 bg-white border-b border-gray-100">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
-            <p className="text-sm font-bold text-emerald-600 uppercase tracking-widest mb-2">Simple &amp; Transparent</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">How Admissions Work</h2>
+            <p className="text-sm font-bold text-emerald-600 uppercase tracking-widest mb-2">सरल और पारदर्शी</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">प्रवेश प्रक्रिया कैसे काम करती है</h2>
           </div>
 
           <div className="relative">
@@ -154,9 +162,9 @@ function App() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                   </svg>
                 </div>
-                <span className="text-xs font-bold text-emerald-600 uppercase tracking-wider mb-1">Step 1</span>
-                <h3 className="font-bold text-gray-900 mb-1">Fill the Form</h3>
-                <p className="text-sm text-gray-500">Share your child's details in under 60 seconds</p>
+                <span className="text-xs font-bold text-emerald-600 uppercase tracking-wider mb-1">स्टेप 1</span>
+                <h3 className="font-bold text-gray-900 mb-1">फ़ॉर्म भरें</h3>
+                <p className="text-sm text-gray-500">60 सेकंड से भी कम समय में अपने बच्चे का विवरण दें</p>
               </div>
 
               {/* Step 2 */}
@@ -167,9 +175,9 @@ function App() {
                     <path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.562 4.14 1.54 5.873L.058 23.5l5.806-1.525A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.96 0-3.8-.52-5.39-1.427l-.386-.228-4.01 1.053 1.07-3.91-.25-.4A9.955 9.955 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z" />
                   </svg>
                 </div>
-                <span className="text-xs font-bold text-emerald-600 uppercase tracking-wider mb-1">Step 2</span>
-                <h3 className="font-bold text-gray-900 mb-1">WhatsApp Connect</h3>
-                <p className="text-sm text-gray-500">Our counsellor reaches you instantly on WhatsApp</p>
+                <span className="text-xs font-bold text-emerald-600 uppercase tracking-wider mb-1">स्टेप 2</span>
+                <h3 className="font-bold text-gray-900 mb-1">WhatsApp पर संपर्क</h3>
+                <p className="text-sm text-gray-500">हमारे काउंसलर आपसे तुरंत WhatsApp पर संपर्क करेंगे</p>
               </div>
 
               {/* Step 3 */}
@@ -179,9 +187,9 @@ function App() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                   </svg>
                 </div>
-                <span className="text-xs font-bold text-emerald-600 uppercase tracking-wider mb-1">Step 3</span>
-                <h3 className="font-bold text-gray-900 mb-1">Campus Visit</h3>
-                <p className="text-sm text-gray-500">See the school, labs &amp; hostel — no pressure</p>
+                <span className="text-xs font-bold text-emerald-600 uppercase tracking-wider mb-1">स्टेप 3</span>
+                <h3 className="font-bold text-gray-900 mb-1">कैंपस विजिट</h3>
+                <p className="text-sm text-gray-500">स्कूल, लैब और हॉस्टल देखें — बिना किसी दबाव के</p>
               </div>
 
               {/* Step 4 */}
@@ -191,49 +199,46 @@ function App() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                   </svg>
                 </div>
-                <span className="text-xs font-bold text-emerald-600 uppercase tracking-wider mb-1">Step 4</span>
-                <h3 className="font-bold text-gray-900 mb-1">Join DISHA</h3>
-                <p className="text-sm text-gray-500">Confirm admission &amp; start your child's journey</p>
+                <span className="text-xs font-bold text-emerald-600 uppercase tracking-wider mb-1">स्टेप 4</span>
+                <h3 className="font-bold text-gray-900 mb-1">दिशा से जुड़ें</h3>
+                <p className="text-sm text-gray-500">प्रवेश की पुष्टि करें और अपने बच्चे की यात्रा शुरू करें</p>
               </div>
             </div>
           </div>
 
           <div className="text-center mt-10">
-            <p className="text-gray-500 text-sm">Takes less than 2 minutes · No fees to apply · Instant WhatsApp response</p>
+            <p className="text-gray-500 text-sm">2 मिनट से भी कम समय लगता है · आवेदन नि:शुल्क है · तुरंत WhatsApp पर जवाब</p>
           </div>
         </div>
       </section>
-
-
-
 
       {/* Campus Gallery */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
-            <p className="text-sm font-bold text-emerald-600 uppercase tracking-widest mb-2">Our Campus</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">World-Class Facilities in Godda</h2>
+            <p className="text-sm font-bold text-emerald-600 uppercase tracking-widest mb-2">हमारा कैंपस</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">गोड्डा में विश्व स्तरीय सुविधाएँ</h2>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="col-span-2 row-span-2 rounded-3xl overflow-hidden h-96 md:h-[600px] shadow-2xl">
-              <img src="/school-lab.png" alt="Modern science lab" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              <img src="/school-lab.png" alt="आधुनिक विज्ञान प्रयोगशाला" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="rounded-3xl overflow-hidden h-48 md:h-[292px] shadow-xl">
-              <img src="/smart-classroom.png" alt="Smart classroom" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              <img src="/smart-classroom.png" alt="स्मार्ट क्लासरूम" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="rounded-3xl overflow-hidden h-48 md:h-[292px] shadow-xl">
-              <img src="/school-library.png" alt="School library" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              <img src="/school-library.png" alt="स्कूल पुस्तकालय" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="col-span-2 rounded-3xl overflow-hidden h-48 md:h-[292px] shadow-xl">
-              <img src="/school-playground.png" alt="School playground" className="w-full h-full object-cover object-bottom hover:scale-105 transition-transform duration-500" />
+              <img src="/school-playground.png" alt="खेल का मैदान" className="w-full h-full object-cover object-bottom hover:scale-105 transition-transform duration-500" />
             </div>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
             {[
-              { icon: '🔬', label: 'Science Lab' },
-              { icon: '🤖', label: 'Robotics Room' },
-              { icon: '📚', label: 'Smart Library' },
-              { icon: '⚽', label: 'Sports Ground' },
+              { icon: '🔬', label: 'विज्ञान प्रयोगशाला' },
+              { icon: '🤖', label: 'रोबोटिक्स रूम' },
+              { icon: '📚', label: 'स्मार्ट लाइब्रेरी' },
+              { icon: '⚽', label: 'खेल का मैदान' },
             ].map(f => (
               <div key={f.label} className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-100">
                 <span className="text-2xl">{f.icon}</span>
@@ -249,16 +254,19 @@ function App() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-sm font-bold text-emerald-600 uppercase tracking-widest mb-2">For Outstation Families</p>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Safe. Comfortable. <span className="text-emerald-600">Home Away from Home.</span></h2>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">Our hostel is designed so parents never have to worry. Your child gets a structured, nurturing environment with academic support and personal care.</p>
+              <p className="text-sm font-bold text-emerald-600 uppercase tracking-widest mb-2">बाहर से आने वाले परिवारों के लिए</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">सुरक्षित। आरामदायक। <span className="text-emerald-600">घर जैसा अहसास।</span></h2>
+              <p className="text-lg text-emerald-600 font-bold italic mb-4">
+                "हॉस्टल ऐसन, जेकरा में घर जइसन दुलार और IITian जइसन पढ़ाई मिलतै!"
+              </p>
+              <p className="text-lg text-gray-600 mb-8 leading-relaxed">हमारे हॉस्टल को इस तरह डिज़ाइन किया गया है कि माता-पिता को कभी चिंता न करनी पड़े। आपके बच्चे को पढ़ाई में मदद और व्यक्तिगत देखभाल के साथ एक सुरक्षित माहौल मिलता है।</p>
               <div className="grid sm:grid-cols-2 gap-4">
                 {[
-                  { icon: '🍱', title: 'Nutritious Meals', desc: '3 meals + snacks daily, home-style cooking' },
-                  { icon: '🔒', title: '24/7 Security', desc: 'CCTV surveillance, biometric entry, trained guards' },
-                  { icon: '👩‍🏫', title: 'Resident Warden', desc: 'Dedicated houseparents on every floor' },
-                  { icon: '🏥', title: 'Medical Care', desc: 'On-call doctor, first-aid at all times' },
-                  { icon: '📱', title: 'Parent Updates', desc: 'Weekly WhatsApp updates with photos & progress' },
+                  { icon: '🍱', title: 'पौष्टिक भोजन', desc: 'रोजाना 3 मील + स्नैक्स, घर जैसा खाना' },
+                  { icon: '🔒', title: '24/7 सुरक्षा', desc: 'CCTV कैमरे, बायोमेट्रिक एंट्री, ट्रेंड गार्ड' },
+                  { icon: '👩‍🏫', title: 'निवासी वार्डन', desc: 'हर फ्लोर पर समर्पित वार्डन' },
+                  { icon: '🏥', title: 'मेडिकल सुविधा', desc: 'ऑन-कॉल डॉक्टर, हमेशा उपलब्ध फर्स्ट-एड' },
+                  { icon: '📱', title: 'पेरेंट अपडेट्स', desc: 'तस्वीरों और प्रोग्रेस के साथ साप्ताहिक WhatsApp अपडेट' },
                 ].map(f => (
                   <div key={f.title} className="flex items-start gap-3 bg-emerald-50 rounded-xl p-4 border border-emerald-100">
                     <span className="text-2xl">{f.icon}</span>
@@ -271,7 +279,7 @@ function App() {
               </div>
             </div>
             <div className="relative">
-              <img src="/hostel-room.png" alt="DISHA hostel room" className="rounded-3xl shadow-2xl w-full h-96 md:h-[500px] object-cover" />
+              <img src="/hostel-room.png" alt="दिशा का हॉस्टल कमरा" className="rounded-3xl shadow-2xl w-full h-96 md:h-[500px] object-cover" />
             </div>
           </div>
         </div>
@@ -282,10 +290,13 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Why Parents Choose DISHA Over Traditional Schools
+              माता-पिता पारंपरिक स्कूलों के बजाय दिशा को क्यों चुनते हैं
             </h2>
+            <p className="text-xl text-emerald-600 font-bold italic mb-3">
+              "रटंत विद्या छोड़ियै, अब समझदारी सँ अपन लइका के स्मार्ट बनायै!"
+            </p>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              The difference is clear. The results speak for themselves.
+              फर्क साफ है। और परिणाम भी।
             </p>
           </div>
 
@@ -295,62 +306,62 @@ function App() {
                 <div className="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center">
                   <X className="w-6 h-6 text-gray-600" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-700">Traditional Schools</h3>
+                <h3 className="text-2xl font-bold text-gray-700">पारंपरिक स्कूल</h3>
               </div>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <X className="w-5 h-5 text-gray-500 flex-shrink-0 mt-1" />
-                  <span className="text-gray-600">Outdated rote learning methods – memorize without understanding</span>
+                  <span className="text-gray-600">पुरानी रटने वाली शिक्षा – बिना समझे रटाना</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <X className="w-5 h-5 text-gray-500 flex-shrink-0 mt-1" />
-                  <span className="text-gray-600">No exposure to modern tech like Robotics, AI or coding</span>
+                  <span className="text-gray-600">रोबोटिक्स, एआई या कोडिंग जैसी आधुनिक तकनीक की कोई जानकारी नहीं</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <X className="w-5 h-5 text-gray-500 flex-shrink-0 mt-1" />
-                  <span className="text-gray-600">Generic teaching – no talent discovery or personalized guidance</span>
+                  <span className="text-gray-600">सामान्य शिक्षा – प्रतिभा खोजने या पर्सनल गाइडेंस का अभाव</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <X className="w-5 h-5 text-gray-500 flex-shrink-0 mt-1" />
-                  <span className="text-gray-600">Weak English & Math foundation in state boards</span>
+                  <span className="text-gray-600">कमजोर अंग्रेजी और गणित का आधार</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <X className="w-5 h-5 text-gray-500 flex-shrink-0 mt-1" />
-                  <span className="text-gray-600">No structured residential options for focused learning</span>
+                  <span className="text-gray-600">फोकस्ड लर्निंग के लिए कोई अच्छी हॉस्टल सुविधा नहीं</span>
                 </li>
               </ul>
             </div>
 
             <div className="bg-emerald-50 border-2 border-emerald-400 rounded-xl p-8 relative">
               <div className="absolute -top-4 -right-4 bg-emerald-600 text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg">
-                BEST CHOICE
+                सबसे बेहतरीन विकल्प
               </div>
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 bg-emerald-600 rounded-full flex items-center justify-center">
                   <CheckCircle2 className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">DISHA International</h3>
+                <h3 className="text-2xl font-bold text-gray-900">दिशा इंटरनेशनल</h3>
               </div>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-1" />
-                  <span className="text-gray-900 font-medium">IITian-designed curriculum with concept clarity & problem-solving</span>
+                  <span className="text-gray-900 font-medium">कॉन्सेप्ट क्लैरिटी और प्रॉब्लम सॉल्विंग के साथ IITians द्वारा डिज़ाइन किया गया पाठ्यक्रम</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-1" />
-                  <span className="text-gray-900 font-medium">Hands-on Robotics, AI, STEM projects from early grades</span>
+                  <span className="text-gray-900 font-medium">शुरुआती कक्षाओं से ही हैंड्स-ऑन रोबोटिक्स, AI और STEM प्रोजेक्ट्स </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-1" />
-                  <span className="text-gray-900 font-medium">Fingerprint-based talent analysis for personalized career paths</span>
+                  <span className="text-gray-900 font-medium">सही करियर पाथ के लिए फिंगरप्रिंट आधारित प्रतिभा विश्लेषण </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-1" />
-                  <span className="text-gray-900 font-medium">ICSE board – superior English, Math & Science preparation</span>
+                  <span className="text-gray-900 font-medium">ICSE बोर्ड – बेहतर अंग्रेजी, गणित और विज्ञान की तैयारी</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-1" />
-                  <span className="text-gray-900 font-medium">Premium hostel with disciplined environment & mentorship</span>
+                  <span className="text-gray-900 font-medium">अनुशासन और मेंटरशिप के साथ प्रीमियम हॉस्टल सुविधा</span>
                 </li>
               </ul>
             </div>
@@ -358,7 +369,7 @@ function App() {
 
           <div className="text-center mt-12">
             <Button onClick={() => scrollToSection('apply')} variant="primary" size="lg">
-              Secure Your Child's Seat Now →
+              आज ही अपने बच्चे की सीट पक्की करें →
             </Button>
           </div>
         </div>
@@ -369,66 +380,69 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              What Your Child Gets at DISHA
+              दिशा में आपके बच्चे को क्या मिलता है
             </h2>
+            <p className="text-xl text-emerald-600 font-bold italic mb-3">
+              "तैयारी ऐसन जेकरा से लइका IIT और NEET में झंडा गाड़ देतै!"
+            </p>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              8 powerful advantages that prepare your child for IIT, NEET, and global success
+              8 बड़े फायदे जो आपके बच्चे को IIT, NEET और आगे की सफलता के लिए तैयार करते हैं
             </p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             <FeatureCard
               icon={GraduationCap}
-              title="IITian Mentorship"
-              description="Learn from IIT graduates who understand what it takes to crack JEE, NEET and excel in competitive exams. Scientific teaching methodology with concept clarity."
+              title="IITians द्वारा मेंटरशिप"
+              description="उन IIT ग्रैजुएट्स से सीखें जो जानते हैं कि JEE, NEET पास करने और कॉम्पिटिटिव एग्जाम में सफल होने के लिए क्या चाहिए।"
             />
             <FeatureCard
               icon={BookOpen}
-              title="ICSE Curriculum"
-              description="Superior board with stronger English, Math & Science foundation. Better prepared for NEET, JEE and international education compared to state boards."
+              title="ICSE पाठ्यक्रम"
+              description="अंग्रेजी, गणित और विज्ञान की मजबूत नींव के साथ सुपीरियर बोर्ड। अन्य बोर्ड्स की तुलना में NEET, JEE के लिए बेहतर तैयारी।"
             />
             <FeatureCard
               icon={Microscope}
-              title="STEM-Based Learning"
-              description="Hands-on experiments, real projects, and scientific thinking from day one. Learn by doing, not just memorizing textbooks."
+              title="STEM आधारित शिक्षा"
+              description="पहले दिन से ही व्यावहारिक प्रयोग, वास्तविक प्रोजेक्ट और वैज्ञानिक सोच। सिर्फ रटना नहीं, बल्कि करके सीखना।"
             />
             <FeatureCard
               icon={Bot}
-              title="Robotics & AI Literacy"
-              description="Early exposure to coding, robotics, and artificial intelligence. Build future-ready tech skills that matter in 2026 and beyond."
+              title="रोबोटिक्स और AI"
+              description="शुरुआत से ही कोडिंग, रोबोटिक्स और आर्टिफिशियल इंटेलिजेंस का ज्ञान। भविष्य की ऐसी तकनीक सीखें जो आज और कल के लिए महत्वपूर्ण है।"
             />
             <FeatureCard
               icon={Fingerprint}
-              title="Talent Analysis"
-              description="Scientific fingerprint-based assessment to discover your child's natural strengths, learning style, and ideal career path early."
+              title="टैलेंट एनालिसिस"
+              description="आपके बच्चे की जन्मजात ताकत और सीखने के तरीके का वैज्ञानिक फिंगरप्रिंट-आधारित मूल्यांकन।"
             />
             <FeatureCard
               icon={Palette}
-              title="Activity-Based Learning"
-              description="Creative, engaging classrooms with art, music, drama, and practical experiences. Learning that excites and inspires curiosity."
+              title="एक्टिविटी-बेस्ड लर्निंग"
+              description="कला, संगीत, नाटक और व्यावहारिक अनुभवों के साथ रचनात्मक और आकर्षक कक्षाएं।"
             />
             <FeatureCard
               icon={Calculator}
-              title="Abacus Training"
-              description="Increase concentration, memory power, and calculation speed. Proven system for mental math mastery and brain development."
+              title="अबैकस(Abacus) ट्रेनिंग"
+              description="ध्यान, याददाश्त और दिमागी गणना की गति बढ़ाएं। मानसिक गणित में महारत हासिल करने का सिद्ध तरीका।"
             />
             <FeatureCard
               icon={Home}
-              title="Premium Hostel"
-              description="Safe, structured residential facility with 24/7 care, nutritious meals, study hours, and mentorship. Perfect for focused learning."
+              title="प्रीमियम हॉस्टल"
+              description="24/7 सुरक्षा, पौष्टिक भोजन, अध्ययन के घंटे और मेंटरशिप के साथ सुरक्षित और व्यवस्थित आवासीय सुविधा।"
             />
           </div>
 
           <div className="bg-emerald-50 border-2 border-emerald-200 rounded-xl p-8 text-center">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Limited Seats Available for 2026-27 Academic Year
+              शैक्षणिक सत्र 2026-27 के लिए सीमित सीटें उपलब्ध
             </h3>
             <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
-              Don't wait until it's too late. Secure your child's future with India's most innovative ICSE school in Godda.
+              देर न करें। गोड्डा के सबसे इन्नोवेटिव ICSE स्कूल के साथ अपने बच्चे का भविष्य सुरक्षित करें।
             </p>
-            <Button onClick={handleWhatsAppClick} variant="whatsapp" size="lg" className="inline-flex items-center gap-2">
+            <Button onClick={handleWhatsAppClick} variant="whatsapp" size="lg" className="inline-flex items-center gap-2 font-bold">
               <MessageCircle className="w-5 h-5" />
-              Apply on WhatsApp Now
+              अभी WhatsApp पर आवेदन करें
             </Button>
           </div>
         </div>
@@ -439,10 +453,13 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Why Parents Trust DISHA International
+              माता-पिता दिशा इंटरनेशनल पर भरोसा क्यों करते हैं
             </h2>
+            <p className="text-xl text-emerald-600 font-bold italic mb-3">
+              "हमर लइका के भविष्य, अब सही हांथ में छै!"
+            </p>
             <p className="text-xl text-gray-600">
-              Real results. Real credibility. Real success stories.
+              सच्चे परिणाम। सच्ची विश्वसनीयता। सफलता की असली कहानियाँ।
             </p>
           </div>
 
@@ -451,9 +468,9 @@ function App() {
               <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <GraduationCap className="w-8 h-8 text-emerald-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">IITian-Led Faculty</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">IITian द्वारा संचालित </h3>
               <p className="text-gray-600">
-                Founded and mentored by IIT graduates who bring world-class academic excellence and proven problem-solving methods to Godda.
+                IIT ग्रैजुएट्स द्वारा स्थापित और निर्देशित, जो गोड्डा में विश्व स्तरीय शैक्षणिक उत्कृष्टता और सिद्ध समस्या-समाधान के तरीके लेकर आए हैं।
               </p>
             </div>
 
@@ -461,9 +478,9 @@ function App() {
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award className="w-8 h-8 text-blue-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">ICSE Board Affiliated</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">ICSE बोर्ड से संबद्ध</h3>
               <p className="text-gray-600">
-                Officially recognized ICSE curriculum school delivering superior education standards trusted by lakhs of parents across India.
+                आधिकारिक तौर पर मान्यता प्राप्त ICSE पाठ्यक्रम स्कूल, जिस पर पूरे भारत में लाखों माता-पिता भरोसा करते हैं।
               </p>
             </div>
 
@@ -471,31 +488,31 @@ function App() {
               <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Building2 className="w-8 h-8 text-purple-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Modern Infrastructure</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">आधुनिक इंफ्रास्ट्रक्चर</h3>
               <p className="text-gray-600">
-                State-of-the-art classrooms, science labs, robotics workshop, sports facilities, and premium hostel designed for excellence.
+                भविष्य की सफलता के लिए डिज़ाइन की गई अत्याधुनिक कक्षाएं, विज्ञान प्रयोगशालाएं, रोबोटिक्स वर्कशॉप, खेल सुविधाएं और प्रीमियम हॉस्टल।
               </p>
             </div>
           </div>
 
           <div>
             <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
-              What Parents Are Saying
+              माता-पिता क्या कह रहे हैं
             </h3>
             <div className="grid md:grid-cols-3 gap-8">
               <TestimonialCard
-                quote="My son's confidence and problem-solving skills have improved dramatically. The IITian teachers really know how to make difficult concepts easy. Best decision we made!"
-                parentName="Rajesh Kumar"
+                quote="मेरे बेटे के आत्मविश्वास और समस्या-समाधान कौशल में काफी सुधार हुआ है। IITian शिक्षक वास्तव में जानते हैं कि कठिन कांसेप्ट्स को आसान कैसे बनाया जाए। सबसे अच्छा फैसला!"
+                parentName="राजेश कुमार"
                 childClass="7"
               />
               <TestimonialCard
-                quote="The fingerprint talent analysis was eye-opening. We now understand our daughter's natural strengths and are guiding her career accordingly. DISHA truly cares about each child's future."
-                parentName="Priya Singh"
+                quote="फिंगरप्रिंट टैलेंट एनालिसिस ने मेरी आँखें खोल दीं। अब हम अपनी बेटी की स्वाभाविक खूबियों को समझते हैं और उसके अनुसार उसके करियर का मार्गदर्शन कर रहे हैं। दिशा वास्तव में हर बच्चे के भविष्य की परवाह करता है।"
+                parentName="प्रिया सिंह"
                 childClass="5"
               />
               <TestimonialCard
-                quote="The hostel facility is exceptional. Our daughter is safe, well-fed, and excelling academically. The structured environment has made her more disciplined and focused."
-                parentName="Anil Sharma"
+                quote="हॉस्टल की सुविधा कमाल की है। हमारी बेटी सुरक्षित है, उसे अच्छा खाना मिलता है और वह पढ़ाई में उत्कृष्ट प्रदर्शन कर रही है। अनुशासित माहौल ने उसे अधिक फोकस बना दिया है।"
+                parentName="अनिल शर्मा"
                 childClass="9"
               />
             </div>
@@ -503,7 +520,7 @@ function App() {
 
           <div className="text-center mt-12">
             <Button onClick={() => scrollToSection('apply')} variant="primary" size="lg">
-              Join 500+ Happy Parents →
+              500+ खुशहाल माता-पिता में शामिल हों →
             </Button>
           </div>
         </div>
@@ -514,10 +531,10 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Is DISHA Right for Your Child?
+              क्या दिशा आपके बच्चे के लिए सही है?
             </h2>
             <p className="text-xl text-gray-600">
-              DISHA is perfect for parents who want...
+              दिशा उन माता-पिता के लिए एकदम सही है जो चाहते हैं...
             </p>
           </div>
 
@@ -526,9 +543,9 @@ function App() {
               <div className="w-12 h-12 bg-emerald-600 rounded-full flex items-center justify-center mb-4">
                 <BookOpen className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Strong ICSE Foundation</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">मजबूत ICSE फाउंडेशन</h3>
               <p className="text-gray-700 leading-relaxed">
-                Parents who want their child to have superior English, Math & Science preparation through ICSE board with modern teaching methods.
+                वे माता-पिता जो चाहते हैं कि उनके बच्चे को आधुनिक शिक्षण विधियों के साथ ICSE बोर्ड के माध्यम से मजबूत अंग्रेजी, गणित और विज्ञान की तैयारी मिले।
               </p>
             </div>
 
@@ -536,9 +553,9 @@ function App() {
               <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mb-4">
                 <Bot className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Future-Ready Skills</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">भविष्य के लिए तैयार</h3>
               <p className="text-gray-700 leading-relaxed">
-                Forward-thinking parents who understand the importance of coding, robotics, AI, and STEM education for their child's career.
+                दूरदर्शी माता-पिता जो अपने बच्चे के करियर के लिए कोडिंग, रोबोटिक्स, AI और STEM शिक्षा के महत्व को समझते हैं।
               </p>
             </div>
 
@@ -546,23 +563,26 @@ function App() {
               <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mb-4">
                 <Fingerprint className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Scientific Talent Discovery</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">साइंटिफिक टैलेंट डिस्कवरी</h3>
               <p className="text-gray-700 leading-relaxed">
-                Smart parents who want to discover their child's natural abilities early and guide them toward the right career path scientifically.
+                समझदार माता-पिता जो जल्दी ही अपने बच्चे की प्राकृतिक क्षमताओं की खोज करना चाहते हैं और वैज्ञानिक रूप से उन्हें सही करियर पथ की दिशा दिखाना चाहते हैं।
               </p>
             </div>
           </div>
 
           <div className="bg-gray-900 text-white rounded-2xl p-8 md:p-12 text-center">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
-              Your Child Deserves the Best Start in Life
+              आपका बच्चा जीवन में सबसे अच्छी शुरुआत का हकदार है
             </h3>
-            <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-              Every day you wait is a day of missed learning, growth, and opportunity. Give your child the DISHA advantage today.
+            <p className="text-xl text-emerald-400 font-bold italic mb-4">
+              "बेहतर पढ़ाई खातिर आब गोड्डा से बाहर जाय के जरूरत नै छै!"
             </p>
-            <Button onClick={handleWhatsAppClick} variant="whatsapp" size="lg" className="inline-flex items-center gap-2">
+            <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+              आपके द्वारा इंतजार किया गया हर दिन मिस की गई शिक्षा और अवसर का दिन है। अपने बच्चे को आज ही दिशा का लाभ दें।
+            </p>
+            <Button onClick={handleWhatsAppClick} variant="whatsapp" size="lg" className="inline-flex items-center gap-2 font-bold">
               <MessageCircle className="w-5 h-5" />
-              Apply for Admission on WhatsApp
+              प्रवेश के लिए WhatsApp पर विचार-विमर्श करें
             </Button>
           </div>
         </div>
@@ -575,24 +595,27 @@ function App() {
             {/* Left: Value proposition */}
             <div>
               <div className="inline-flex items-center gap-2 bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full text-sm font-bold mb-6">
-                ⚡ Why Apply Today?
+                ⚡ आज ही आवेदन क्यों करें?
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Secure Your Child's{' '}
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+                अपने बच्चे का{' '}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-emerald-500">
-                  Future Today
+                  भविष्य आज ही सुरक्षित करें
                 </span>
               </h2>
+              <p className="text-lg text-emerald-600 font-bold italic mb-4">
+                "देर नय करियै, गोड्डा के सबसे नीक स्कूल में अपन सीट पक्की करियै!"
+              </p>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Every year, hundreds of families across Godda &amp; Jharkhand choose DISHA for its unique IITian mentorship, ICSE curriculum, and modern STEM labs. Seats are limited — don't miss out.
+                हर साल, गोड्डा और झारखंड के सैकड़ों परिवार दिशा के अद्वितीय IITian मेंटरशिप, ICSE पाठ्यक्रम और आधुनिक STEM लैब्स के लिए इसे चुनते हैं। सीटें सीमित हैं — मौका हाथ से न जाने दें।
               </p>
 
               <div className="space-y-4 mb-8">
                 {[
-                  { icon: '🎓', title: 'Free Admission Counselling', desc: 'Speak to our IITian faculty directly — zero obligation' },
-                  { icon: '⚡', title: 'Instant WhatsApp Response', desc: 'Get class fees, syllabus & dates in minutes' },
-                  { icon: '🏫', title: 'Campus Visit Booking', desc: 'Schedule a free school tour for your family' },
-                  { icon: '🏆', title: 'Merit Scholarship Available', desc: 'Eligible students get fee concessions — apply to know more' },
+                  { icon: '🎓', title: 'नि:शुल्क एडमिशन काउंसलिंग', desc: 'सीधे हमारे IITian शिक्षकों से बात करें — बिना किसी झिझक के' },
+                  { icon: '⚡', title: 'तुरंत WhatsApp पर जवाब', desc: 'मिनटों में क्लास फीस, सिलेबस और तारीखें प्राप्त करें' },
+                  { icon: '🏫', title: 'कैंपस भ्रमण बुक करें', desc: 'अपने परिवार के लिए स्कूल का मुफ़्त दौरा तय करें' },
+                  { icon: '🏆', title: 'मेरिट स्कॉलरशिप उपलब्ध', desc: 'योग्य छात्रों को फीस में छूट मिलती है - अधिक जानने के लिए आवेदन करें' },
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm border border-gray-100">
                     <div className="text-2xl flex-shrink-0">{item.icon}</div>
@@ -605,13 +628,13 @@ function App() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-3">
-                <Button onClick={handleWhatsAppClick} variant="whatsapp" className="inline-flex items-center gap-2">
+                <Button onClick={handleWhatsAppClick} variant="whatsapp" className="inline-flex items-center gap-2 font-bold">
                   <MessageCircle className="w-5 h-5" />
-                  Chat on WhatsApp
+                  WhatsApp पर बात करें
                 </Button>
-                <Button onClick={handleCallClick} variant="secondary" className="inline-flex items-center gap-2">
+                <Button onClick={handleCallClick} variant="secondary" className="inline-flex items-center gap-2 font-bold">
                   <Phone className="w-5 h-5" />
-                  Call: 9296750115
+                  कॉल करें: 9296750115
                 </Button>
               </div>
             </div>
@@ -629,41 +652,44 @@ function App() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Frequently Asked Questions
+              अक्सर पूछे जाने वाले प्रश्न (FAQs)
             </h2>
+            <p className="text-xl text-emerald-600 font-bold italic mb-3">
+              "कोनो शंका छै? सब सवाल के जवाब हिंया मिलतै!"
+            </p>
             <p className="text-xl text-gray-600">
-              Everything you need to know about DISHA International School
+              दिशा इंटरनेशनल स्कूल के बारे में आपको जो कुछ भी जानने की जरूरत है
             </p>
           </div>
 
           <div className="space-y-4">
             <FAQItem
-              question="What makes DISHA different from other ICSE schools in Godda?"
-              answer="DISHA is India's first IITian-led ICSE school in Godda. We combine ICSE's superior curriculum with scientific teaching methods designed by IIT graduates. Plus, we offer unique advantages like Robotics & AI training, fingerprint-based talent analysis, Abacus training, and premium hostel facilities – features no other school in the region provides."
+              question="गोड्डा में अन्य ICSE स्कूलों से दिशा कैसे अलग है?"
+              answer="दिशा गोड्डा में भारत का पहला IITian-संचालित ICSE स्कूल है। हम IIT ग्रैजुएट्स द्वारा डिज़ाइन किए गए वैज्ञानिक शिक्षण विधियों के साथ ICSE के बेहतर पाठ्यक्रम को जोड़ते हैं। इसके अलावा, हम रोबोटिक्स और AI التدريب प्रशिक्षण, फिंगरप्रिंट टैलेंट एनालिसिस, अबैकस प्रशिक्षण और प्रीमियम हॉस्टल जैसी असाधारण सुविधाएँ प्रदान करते हैं - जो क्षेत्र का कोई अन्य स्कूल नहीं देता है।"
             />
             <FAQItem
-              question="What is Fingerprint Talent Analysis and how does it help my child?"
-              answer="Fingerprint Talent Analysis is a scientifically-backed method that identifies your child's innate strengths, learning style, and natural abilities by analyzing their fingerprint patterns. This helps us personalize their education path and guide them toward careers where they'll naturally excel – whether that's engineering, medicine, arts, or business."
+              question="फिंगरप्रिंट टैलेंट एनालिसिस क्या है और यह मेरे बच्चे की कैसे मदद करता है?"
+              answer="फिंगरप्रिंट टैलेंट एनालिसिस एक वैज्ञानिक रूप से समर्थित विधि है जो अपने फिंगरप्रिंट पैटर्न का विश्लेषण करके आपके बच्चे की जन्मजात ताकत, सीखने की शैली और प्राकृतिक क्षमताओं की पहचान करती है। यह उनके एजुकेशन पाथवे को पर्सनल बनाने में मदद करता है और उन्हें उन करियर की ओर मार्गदर्शन करता है जहां वे स्वाभाविक रूप से उत्कृष्ट होंगे - चाहे वह इंजीनियरिंग, मेडिसिन, कला या बिजनेस हो।"
             />
             <FAQItem
-              question="Do you have hostel facilities? What is included?"
-              answer="Yes! DISHA offers a premium residential hostel with 24/7 supervision, nutritious meals, comfortable accommodation, dedicated study hours, sports facilities, and constant mentorship. It's perfect for students who need a structured, disciplined environment for focused learning. The hostel ensures your child is safe, well-fed, and academically supported at all times."
+              question="क्या आपके पास हॉस्टल है? इसमें क्या शामिल है?"
+              answer="हाँ! दिशा 24/7 निगरानी, ​​पौष्टिक भोजन, आरामदायक आवास, समर्पित अध्ययन समय, खेल सुविधाएं और निरंतर मेंटरशिप के साथ एक प्रीमियम आवासीय हॉस्टल प्रदान करता है। यह उन छात्रों के लिए एकदम सही है जिन्हें फोकस्ड लर्निंग के लिए एक संरचित, अनुशासित वातावरण की आवश्यकता है। हॉस्टल सुनिश्चित करता है कि आपका बच्चा सुरक्षित है, उसे अच्छा खाना मिलता है और वह पढ़ाई में उत्कृष्ट है।"
             />
             <FAQItem
-              question="What age groups and classes do you admit?"
-              answer="DISHA International School admits students from Nursery through Class 8. We follow the ICSE curriculum and accept admissions throughout the year based on seat availability. Whether your child is just starting their education journey or looking to transfer from another school, we welcome them to the DISHA family."
+              question="आप किन आयु समूहों और कक्षाओं में प्रवेश देते हैं?"
+              answer="दिशा इंटरनेशनल स्कूल नर्सरी से लेकर 8वीं कक्षा तक के छात्रों को प्रवेश देता है। हम ICSE पाठ्यक्रम का पालन करते हैं और सीट उपलब्धता के आधार पर साल भर प्रवेश स्वीकार करते हैं। चाहे आपका बच्चा अभी अपनी शिक्षा यात्रा शुरू कर रहा हो या किसी दूसरे स्कूल से ट्रांसफर लेना चाहता हो, हम दिशा परिवार में उनका स्वागत करते हैं।"
             />
             <FAQItem
-              question="How can I schedule a school visit or campus tour?"
-              answer="Simply click the WhatsApp button or call us at 9296750115 to schedule your campus visit. We offer guided tours where you can see our modern classrooms, science labs, robotics workshop, sports facilities, and hostel. You'll also meet our IITian faculty and understand exactly why DISHA is the right choice for your child's future."
+              question="मैं स्कूल विजिट या कैंपस टूर कैसे निर्धारित कर सकता हूँ?"
+              answer="अपनी कैंपस विजिट तय करने के लिए बस WhatsApp बटन पर क्लिक करें या हमें 9296750115 पर कॉल करें। हम गाइडेड टूर प्रदान करते हैं जहाँ आप हमारी आधुनिक कक्षाओं, विज्ञान प्रयोगशालाओं, रोबोटिक्स वर्कशॉप, खेल सुविधाओं और हॉस्टल को देख सकते हैं। आप हमारे IITian शिक्षकों से भी मिलेंगे और समझेंगे कि दिशा आपके बच्चे के भविष्य के लिए सही विकल्प क्यों है।"
             />
           </div>
 
           <div className="text-center mt-12">
-            <p className="text-gray-600 mb-6">Still have questions?</p>
-            <Button onClick={handleWhatsAppClick} variant="primary" size="lg" className="inline-flex items-center gap-2">
+            <p className="text-gray-600 mb-6">अभी भी कोई प्रश्न है?</p>
+            <Button onClick={handleWhatsAppClick} variant="primary" size="lg" className="inline-flex items-center gap-2 font-bold">
               <MessageCircle className="w-5 h-5" />
-              Chat with Our Admission Team
+              हमारी एडमिशन टीम से चैट करें
             </Button>
           </div>
         </div>
@@ -677,17 +703,17 @@ function App() {
               <div className="flex items-center gap-2 mb-4">
                 <GraduationCap className="w-8 h-8 text-emerald-500" />
                 <div>
-                  <h3 className="text-xl font-bold">DISHA INTERNATIONAL SCHOOL</h3>
-                  <p className="text-sm text-gray-400">IITian-Led ICSE School</p>
+                  <h3 className="text-xl font-bold">दिशा इंटरनेशनल स्कूल</h3>
+                  <p className="text-sm text-gray-400">IITian द्वारा संचालित ICSE स्कूल</p>
                 </div>
               </div>
               <p className="text-gray-400 mb-4 leading-relaxed">
-                Empowering students with scientific thinking, academic excellence, and future-ready skills for IIT, NEET, and global success.
+                IIT, NEET और वैश्विक सफलता के लिए छात्रों को वैज्ञानिक सोच, शैक्षणिक उत्कृष्टता और भविष्य के कौशल के साथ सशक्त बनाना।
               </p>
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
                   <MapPin className="w-5 h-5 text-emerald-500" />
-                  <span className="text-gray-300">Professor Colony, Godda, Jharkhand</span>
+                  <span className="text-gray-300">प्रोफेसर कॉलोनी, गोड्डा, झारखंड</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone className="w-5 h-5 text-emerald-500" />
@@ -697,29 +723,29 @@ function App() {
             </div>
 
             <div>
-              <h4 className="font-bold text-lg mb-4">Quick Links</h4>
+              <h4 className="font-bold text-lg mb-4">त्वरित लिंक</h4>
               <ul className="space-y-2">
-                <li><button onClick={() => scrollToSection('hero')} className="text-gray-400 hover:text-emerald-500">Home</button></li>
-                <li><button onClick={() => scrollToSection('why-disha')} className="text-gray-400 hover:text-emerald-500">Why DISHA</button></li>
-                <li><button onClick={() => scrollToSection('benefits')} className="text-gray-400 hover:text-emerald-500">Benefits</button></li>
-                <li><button onClick={() => scrollToSection('proof')} className="text-gray-400 hover:text-emerald-500">Testimonials</button></li>
-                <li><button onClick={() => scrollToSection('faq')} className="text-gray-400 hover:text-emerald-500">FAQs</button></li>
+                <li><button onClick={() => scrollToSection('hero')} className="text-gray-400 hover:text-emerald-500">होम</button></li>
+                <li><button onClick={() => scrollToSection('why-disha')} className="text-gray-400 hover:text-emerald-500">दिशा ही क्यों</button></li>
+                <li><button onClick={() => scrollToSection('benefits')} className="text-gray-400 hover:text-emerald-500">लाभ</button></li>
+                <li><button onClick={() => scrollToSection('proof')} className="text-gray-400 hover:text-emerald-500">टेस्टिमोनियल्स</button></li>
+                <li><button onClick={() => scrollToSection('faq')} className="text-gray-400 hover:text-emerald-500">अक्सर पूछे जाने वाले प्रश्न</button></li>
               </ul>
             </div>
 
             <div>
-              <h4 className="font-bold text-lg mb-4">Get Started</h4>
+              <h4 className="font-bold text-lg mb-4">शुरुआत करें</h4>
               <ul className="space-y-2">
-                <li><button onClick={() => scrollToSection('apply')} className="text-gray-400 hover:text-emerald-500">Apply for Admission</button></li>
-                <li><button onClick={handleWhatsAppClick} className="text-gray-400 hover:text-emerald-500">WhatsApp Us</button></li>
-                <li><button onClick={handleCallClick} className="text-gray-400 hover:text-emerald-500">Call Us</button></li>
-                <li><button onClick={() => scrollToSection('apply')} className="text-gray-400 hover:text-emerald-500">Schedule Campus Visit</button></li>
+                <li><button onClick={() => scrollToSection('apply')} className="text-gray-400 hover:text-emerald-500">प्रवेश के लिए आवेदन करें</button></li>
+                <li><button onClick={handleWhatsAppClick} className="text-gray-400 hover:text-emerald-500">हमें WhatsApp करें</button></li>
+                <li><button onClick={handleCallClick} className="text-gray-400 hover:text-emerald-500">हमें कॉल करें</button></li>
+                <li><button onClick={() => scrollToSection('apply')} className="text-gray-400 hover:text-emerald-500">कैंपस विजिट शेड्यूल करें</button></li>
               </ul>
             </div>
           </div>
 
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-            <p>&copy; 2026 DISHA International School. All rights reserved.</p>
+            <p>&copy; 2026 दिशा इंटरनेशनल स्कूल। सभी अधिकार सुरक्षित।</p>
           </div>
         </div>
       </footer >
@@ -730,7 +756,7 @@ function App() {
           <button
             onClick={handleWhatsAppClick}
             className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-2xl flex items-center justify-center transition-all duration-200 hover:scale-110 active:scale-95"
-            aria-label="Contact on WhatsApp"
+            aria-label="WhatsApp पर संपर्क करें"
           >
             <MessageCircle className="w-6 h-6" />
           </button>

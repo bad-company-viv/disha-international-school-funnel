@@ -14,7 +14,7 @@ export function TestimonialCard({ quote, parentName, childClass }: TestimonialCa
       <p className="text-gray-700 leading-relaxed mb-4 italic">"{quote}"</p>
       <div className="border-t border-gray-200 pt-4">
         <p className="font-bold text-gray-900">{parentName}</p>
-        <p className="text-sm text-gray-600">Parent of Class {childClass} Student</p>
+        <p className="text-sm text-gray-600">कक्षा {childClass} के छात्र के माता-पिता</p>
       </div>
     </div>
   );

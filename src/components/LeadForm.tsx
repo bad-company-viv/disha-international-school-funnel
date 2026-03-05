@@ -58,12 +58,12 @@ export function LeadForm() {
         <div className="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
           <CheckCircle className="w-10 h-10 text-emerald-600" />
         </div>
-        <h3 className="text-2xl font-bold text-gray-900 mb-3">Application Received! 🎉</h3>
+        <h3 className="text-2xl font-bold text-gray-900 mb-3">आवेदन प्राप्त हुआ! 🎉</h3>
         <p className="text-gray-700 mb-2 text-lg">
-          Thank you for choosing DISHA.
+          दिशा को चुनने के लिए धन्यवाद।
         </p>
         <p className="text-sm text-gray-500">
-          Our admission team will contact you shortly to guide you through the next steps.
+          आगे की प्रक्रिया के लिए हमारी प्रवेश टीम जल्द ही आपसे संपर्क करेगी।
         </p>
       </div>
     );
@@ -75,10 +75,10 @@ export function LeadForm() {
       <div className="bg-gradient-to-r from-emerald-600 to-emerald-500 rounded-t-2xl p-6 text-white text-center">
         <div className="inline-flex items-center gap-2 bg-white/20 rounded-full px-4 py-1 text-sm font-semibold mb-3">
           <span className="w-2 h-2 bg-yellow-300 rounded-full animate-pulse"></span>
-          Limited Seats — 2026-27 Admissions Open
+          सीमित सीटें — 2026-27 प्रवेश प्रारंभ
         </div>
-        <h3 className="text-2xl font-bold">Get Free Admission Counselling</h3>
-        <p className="text-emerald-100 mt-1 text-sm">Fill your details below — our team will reach out instantly</p>
+        <h3 className="text-2xl font-bold">नि:शुल्क प्रवेश काउंसलिंग प्राप्त करें</h3>
+        <p className="text-emerald-100 mt-1 text-sm">नीचे अपना विवरण भरें — हमारी टीम आपसे तुरंत संपर्क करेगी</p>
       </div>
 
       <form onSubmit={handleSubmit} className="bg-white rounded-b-2xl shadow-xl p-8 border border-t-0 border-gray-100">
@@ -86,7 +86,7 @@ export function LeadForm() {
           {/* Parent Name */}
           <div>
             <label htmlFor="name" className="block text-sm font-bold text-gray-700 mb-2">
-              Parent's Full Name *
+              माता/पिता का पूरा नाम *
             </label>
             <div className="relative">
               <User className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
@@ -98,7 +98,7 @@ export function LeadForm() {
                 value={formData.name}
                 onChange={handleChange}
                 className="w-full pl-10 pr-4 py-3.5 border border-gray-300 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all text-gray-900"
-                placeholder="Enter your full name"
+                placeholder="पूरा नाम दर्ज करें"
               />
             </div>
           </div>
@@ -106,7 +106,7 @@ export function LeadForm() {
           {/* Child Name */}
           <div>
             <label htmlFor="childName" className="block text-sm font-bold text-gray-700 mb-2">
-              Child's Name *
+              बच्चे का नाम *
             </label>
             <div className="relative">
               <BookOpen className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
@@ -118,7 +118,7 @@ export function LeadForm() {
                 value={formData.childName}
                 onChange={handleChange}
                 className="w-full pl-10 pr-4 py-3.5 border border-gray-300 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all text-gray-900"
-                placeholder="Enter child's full name"
+                placeholder="बच्चे का पूरा नाम दर्ज करें"
               />
             </div>
           </div>
@@ -126,7 +126,7 @@ export function LeadForm() {
           {/* Child Class */}
           <div>
             <label htmlFor="childClass" className="block text-sm font-bold text-gray-700 mb-2">
-              Class Applying For *
+              जिस कक्षा के लिए आवेदन कर रहे हैं *
             </label>
             <select
               id="childClass"
@@ -136,25 +136,25 @@ export function LeadForm() {
               onChange={handleChange}
               className="w-full px-4 py-3.5 border border-gray-300 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all bg-white text-gray-900"
             >
-              <option value="">Select class</option>
-              <option value="Nursery">Nursery</option>
+              <option value="">कक्षा चुनें</option>
+              <option value="Nursery">नर्सरी (Nursery)</option>
               <option value="LKG">LKG</option>
               <option value="UKG">UKG</option>
-              <option value="Class 1">Class 1</option>
-              <option value="Class 2">Class 2</option>
-              <option value="Class 3">Class 3</option>
-              <option value="Class 4">Class 4</option>
-              <option value="Class 5">Class 5</option>
-              <option value="Class 6">Class 6</option>
-              <option value="Class 7">Class 7</option>
-              <option value="Class 8">Class 8</option>
+              <option value="Class 1">कक्षा 1</option>
+              <option value="Class 2">कक्षा 2</option>
+              <option value="Class 3">कक्षा 3</option>
+              <option value="Class 4">कक्षा 4</option>
+              <option value="Class 5">कक्षा 5</option>
+              <option value="Class 6">कक्षा 6</option>
+              <option value="Class 7">कक्षा 7</option>
+              <option value="Class 8">कक्षा 8</option>
             </select>
           </div>
 
           {/* Phone */}
           <div>
             <label htmlFor="phone" className="block text-sm font-bold text-gray-700 mb-2">
-              WhatsApp Number *
+              WhatsApp नंबर *
             </label>
             <div className="relative">
               <PhoneCall className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
@@ -167,7 +167,7 @@ export function LeadForm() {
                 value={formData.phone}
                 onChange={handleChange}
                 className="w-full pl-10 pr-4 py-3.5 border border-gray-300 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all text-gray-900"
-                placeholder="10-digit WhatsApp number"
+                placeholder="10 अंकों का WhatsApp नंबर"
               />
             </div>
           </div>
@@ -180,7 +180,7 @@ export function LeadForm() {
             className="w-full flex items-center justify-center gap-3 text-lg font-bold py-4 rounded-xl shadow-lg"
             disabled={status === 'loading'}
           >
-            {status === 'loading' ? 'Processing...' : 'Submit Application'}
+            {status === 'loading' ? 'प्रक्रिया चल रही है...' : 'आवेदन जमा करें'}
             <ArrowRight className="w-6 h-6" />
           </Button>
 
@@ -188,15 +188,15 @@ export function LeadForm() {
           <div className="flex items-center justify-center gap-6 pt-2">
             <div className="flex items-center gap-1.5 text-xs text-gray-500">
               <CheckCircle className="w-4 h-4 text-emerald-500" />
-              No Spam
+              कोई स्पैम नहीं
             </div>
             <div className="flex items-center gap-1.5 text-xs text-gray-500">
               <CheckCircle className="w-4 h-4 text-emerald-500" />
-              100% Free
+              100% नि:शुल्क
             </div>
             <div className="flex items-center gap-1.5 text-xs text-gray-500">
               <CheckCircle className="w-4 h-4 text-emerald-500" />
-              Instant Reply
+              तुरंत जवाब
             </div>
           </div>
         </div>
