@@ -723,12 +723,12 @@ function App() {
             </div>
 
             <div>
-              <h4 className="font-bold text-lg mb-4">Quick Links</h4>
+              <h4 className="font-bold text-lg mb-4">त्वरित लिंक</h4>
               <ul className="space-y-2">
-                <li><button onClick={() => scrollToSection('hero')} className="text-gray-400 hover:text-emerald-500">Home</button></li>
-                <li><button onClick={() => scrollToSection('benefits')} className="text-gray-400 hover:text-emerald-500">Benefit</button></li>
-                <li><button onClick={() => scrollToSection('proof')} className="text-gray-400 hover:text-emerald-500">Testimonials</button></li>
-                <li><button onClick={() => scrollToSection('faq')} className="text-gray-400 hover:text-emerald-500">Frequently Asked Questions</button></li>
+                <li><button onClick={() => scrollToSection('hero')} className="text-gray-400 hover:text-emerald-500">होम</button></li>
+                <li><button onClick={() => scrollToSection('benefits')} className="text-gray-400 hover:text-emerald-500">लाभ</button></li>
+                <li><button onClick={() => scrollToSection('proof')} className="text-gray-400 hover:text-emerald-500">प्रमाण</button></li>
+                <li><button onClick={() => scrollToSection('faq')} className="text-gray-400 hover:text-emerald-500">अक्सर पूछे जाने वाले सवाल</button></li>
               </ul>
             </div>
 
