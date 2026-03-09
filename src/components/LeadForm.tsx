@@ -145,9 +145,6 @@ export function LeadForm() {
               <option value="Class 3">कक्षा 3</option>
               <option value="Class 4">कक्षा 4</option>
               <option value="Class 5">कक्षा 5</option>
-              <option value="Class 6">कक्षा 6</option>
-              <option value="Class 7">कक्षा 7</option>
-              <option value="Class 8">कक्षा 8</option>
             </select>
           </div>
 
