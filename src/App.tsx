@@ -482,21 +482,21 @@ function App() {
             <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
               What Parents Are Saying
             </h3>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-8 items-stretch">
               <TestimonialCard
-                quote="My son's confidence and problem-solving skills have improved dramatically. The IITian teachers really know how to make difficult concepts easy. Best decision we made!"
-                parentName="Rajesh Kumar"
-                childClass="7"
-              />
-              <TestimonialCard
-                quote="The fingerprint talent analysis was eye-opening. We now understand our daughter's natural strengths and are guiding her career accordingly. DISHA truly cares about each child's future."
+                quote="The fingerprint talent analysis opened my eyes. We now understand our daughter's natural strengths and are guiding her career accordingly. Disha truly cares about every child's future."
                 parentName="Priya Singh"
                 childClass="5"
               />
               <TestimonialCard
-                quote="The hostel facility is exceptional. Our daughter is safe, well-fed, and excelling academically. The structured environment has made her more disciplined and focused."
+                quote="My son's confidence and problem-solving skills have improved significantly. The IITian teachers really know how to make difficult concepts easy. Best decision!"
+                parentName="Rajesh Kumar"
+                childClass="3"
+              />
+              <TestimonialCard
+                quote="The hostel facilities are amazing. Our daughter is safe, gets good food, and is excelling in her studies. The disciplined environment has made her more focused."
                 parentName="Anil Sharma"
-                childClass="9"
+                childClass="4"
               />
             </div>
           </div>
@@ -651,7 +651,7 @@ function App() {
             />
             <FAQItem
               question="What age groups and classes do you admit?"
-              answer="DISHA International School admits students from Nursery through Class 8. We follow the ICSE curriculum and accept admissions throughout the year based on seat availability. Whether your child is just starting their education journey or looking to transfer from another school, we welcome them to the DISHA family."
+              answer="DISHA International School admits students from Nursery through Class 5. We follow the ICSE curriculum and accept admissions throughout the year based on seat availability. Whether your child is just starting their education journey or looking to transfer from another school, we welcome them to the DISHA family."
             />
             <FAQItem
               question="How can I schedule a school visit or campus tour?"
