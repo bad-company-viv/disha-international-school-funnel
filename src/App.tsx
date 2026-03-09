@@ -499,7 +499,7 @@ function App() {
             <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
               माता-पिता क्या कह रहे हैं
             </h3>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-8 items-stretch">
               <TestimonialCard
                 quote="फिंगरप्रिंट टैलेंट एनालिसिस ने मेरी आँखें खोल दीं। अब हम अपनी बेटी की स्वाभाविक खूबियों को समझते हैं और उसके अनुसार उसके करियर का मार्गदर्शन कर रहे हैं। दिशा वास्तव में हर बच्चे के भविष्य की परवाह करता है।"
                 parentName="प्रिया सिंह"
@@ -723,13 +723,12 @@ function App() {
             </div>
 
             <div>
-              <h4 className="font-bold text-lg mb-4">त्वरित लिंक</h4>
+              <h4 className="font-bold text-lg mb-4">Quick Links</h4>
               <ul className="space-y-2">
-                <li><button onClick={() => scrollToSection('hero')} className="text-gray-400 hover:text-emerald-500">होम</button></li>
-                <li><button onClick={() => scrollToSection('why-disha')} className="text-gray-400 hover:text-emerald-500">दिशा ही क्यों</button></li>
-                <li><button onClick={() => scrollToSection('benefits')} className="text-gray-400 hover:text-emerald-500">लाभ</button></li>
-                <li><button onClick={() => scrollToSection('proof')} className="text-gray-400 hover:text-emerald-500">टेस्टिमोनियल्स</button></li>
-                <li><button onClick={() => scrollToSection('faq')} className="text-gray-400 hover:text-emerald-500">अक्सर पूछे जाने वाले प्रश्न</button></li>
+                <li><button onClick={() => scrollToSection('hero')} className="text-gray-400 hover:text-emerald-500">Home</button></li>
+                <li><button onClick={() => scrollToSection('benefits')} className="text-gray-400 hover:text-emerald-500">Benefit</button></li>
+                <li><button onClick={() => scrollToSection('proof')} className="text-gray-400 hover:text-emerald-500">Testimonials</button></li>
+                <li><button onClick={() => scrollToSection('faq')} className="text-gray-400 hover:text-emerald-500">Frequently Asked Questions</button></li>
               </ul>
             </div>
 

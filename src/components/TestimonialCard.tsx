@@ -9,10 +9,10 @@ interface TestimonialCardProps {
 
 export function TestimonialCard({ quote, parentName, childClass }: TestimonialCardProps) {
   return (
-    <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+    <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 flex flex-col h-full">
       <Quote className="w-10 h-10 text-emerald-600 mb-4" />
-      <p className="text-gray-700 leading-relaxed mb-4 italic">"{quote}"</p>
-      <div className="border-t border-gray-200 pt-4">
+      <p className="text-gray-700 leading-relaxed mb-4 italic flex-grow">"{quote}"</p>
+      <div className="border-t border-gray-200 pt-4 mt-auto">
         <p className="font-bold text-gray-900">{parentName}</p>
         <p className="text-sm text-gray-600">कक्षा {childClass} के छात्र के माता-पिता</p>
       </div>
