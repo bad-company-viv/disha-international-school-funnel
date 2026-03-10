@@ -104,7 +104,7 @@ function App() {
 
               {/* Subheadline */}
               <p className="text-xl sm:text-2xl text-gray-700 mb-10 leading-relaxed">
-                गोड्डा का पहला <span className="text-emerald-600 font-bold">IITian द्वारा संचालित ICSE स्कूल</span> — जो भविष्य के डॉक्टर, इंजीनियर और इनोवेटर बना रहा है।
+                गोड्डा का पहला <span className="text-emerald-600 font-bold">IITian द्वारा संचालित ICSE पाठ्यक्रम आधारित स्कूल</span> — जो भविष्य के डॉक्टर, इंजीनियर और इनोवेटर बना रहा है।
               </p>
 
               {/* CTA Buttons */}
@@ -357,7 +357,7 @@ function App() {
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-1" />
-                  <span className="text-gray-900 font-medium">ICSE बोर्ड – बेहतर अंग्रेजी, गणित और विज्ञान की तैयारी</span>
+                  <span className="text-gray-900 font-medium">ICSE आधारित पाठ्यक्रम – बेहतर अंग्रेजी, गणित और विज्ञान की नींव</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-1" />
@@ -438,7 +438,7 @@ function App() {
               शैक्षणिक सत्र 2026-27 के लिए सीमित सीटें उपलब्ध
             </h3>
             <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
-              देर न करें। गोड्डा के सबसे इन्नोवेटिव ICSE स्कूल के साथ अपने बच्चे का भविष्य सुरक्षित करें।
+              देर न करें। गोड्डा के सबसे इन्नोवेटिव ICSE पाठ्यक्रम आधारित स्कूल के साथ अपने बच्चे का भविष्य सुरक्षित करें।
             </p>
             <Button onClick={handleWhatsAppClick} variant="whatsapp" size="lg" className="inline-flex items-center gap-2 font-bold">
               <MessageCircle className="w-5 h-5" />
@@ -478,9 +478,9 @@ function App() {
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award className="w-8 h-8 text-blue-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">ICSE बोर्ड से संबद्ध</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">ICSE आधारित पाठ्यक्रम</h3>
               <p className="text-gray-600">
-                आधिकारिक तौर पर मान्यता प्राप्त ICSE पाठ्यक्रम स्कूल, जिस पर पूरे भारत में लाखों माता-पिता भरोसा करते हैं।
+                ICSE पाठ्यक्रम मानकों का पालन करते हुए उच्च गुणवत्ता की शिक्षा प्रदान करना, जिस पर पूरे भारत में माता-पिता भरोसा करते हैं।
               </p>
             </div>
 
@@ -543,9 +543,9 @@ function App() {
               <div className="w-12 h-12 bg-emerald-600 rounded-full flex items-center justify-center mb-4">
                 <BookOpen className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">मजबूत ICSE फाउंडेशन</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">मजबूत शैक्षणिक आधार</h3>
               <p className="text-gray-700 leading-relaxed">
-                वे माता-पिता जो चाहते हैं कि उनके बच्चे को आधुनिक शिक्षण विधियों के साथ ICSE बोर्ड के माध्यम से मजबूत अंग्रेजी, गणित और विज्ञान की तैयारी मिले।
+                वे माता-पिता जो चाहते हैं कि उनके बच्चे को आधुनिक शिक्षण विधियों के साथ ICSE आधारित पाठ्यक्रम के माध्यम से मजबूत अंग्रेजी, गणित और विज्ञान की तैयारी मिले।
               </p>
             </div>
 
@@ -664,8 +664,8 @@ function App() {
 
           <div className="space-y-4">
             <FAQItem
-              question="गोड्डा में अन्य ICSE स्कूलों से दिशा कैसे अलग है?"
-              answer="दिशा गोड्डा में भारत का पहला IITian-संचालित ICSE स्कूल है। हम IIT ग्रैजुएट्स द्वारा डिज़ाइन किए गए वैज्ञानिक शिक्षण विधियों के साथ ICSE के बेहतर पाठ्यक्रम को जोड़ते हैं। इसके अलावा, हम रोबोटिक्स और AI प्रशिक्षण, फिंगरप्रिंट टैलेंट एनालिसिस, अबैकस प्रशिक्षण और प्रीमियम हॉस्टल जैसी असाधारण सुविधाएँ प्रदान करते हैं - जो क्षेत्र का कोई अन्य स्कूल नहीं देता है।"
+              question="गोड्डा में अन्य स्कूलों से दिशा कैसे अलग है?"
+              answer="दिशा गोड्डा में भारत का पहला IITian-संचालित ICSE पाठ्यक्रम आधारित स्कूल है। हम IIT ग्रैजुएट्स द्वारा डिज़ाइन किए गए वैज्ञानिक शिक्षण विधियों के साथ ICSE के बेहतर पाठ्यक्रम को जोड़ते हैं। इसके अलावा, हम रोबोटिक्स और AI प्रशिक्षण, फिंगरप्रिंट टैलेंट एनालिसिस, अबैकस प्रशिक्षण और प्रीमियम हॉस्टल जैसी असाधारण सुविधाएँ प्रदान करते हैं - जो क्षेत्र का कोई अन्य स्कूल नहीं देता है।"
             />
             <FAQItem
               question="फिंगरप्रिंट टैलेंट एनालिसिस क्या है और यह मेरे बच्चे की कैसे मदद करता है?"
@@ -677,7 +677,7 @@ function App() {
             />
             <FAQItem
               question="आप किन आयु समूहों और कक्षाओं में प्रवेश देते हैं?"
-              answer="दिशा इंटरनेशनल स्कूल नर्सरी से लेकर 5वीं कक्षा तक के छात्रों को प्रवेश देता है। हम ICSE पाठ्यक्रम का पालन करते हैं और सीट उपलब्धता के आधार पर साल भर प्रवेश स्वीकार करते हैं। चाहे आपका बच्चा अभी अपनी शिक्षा यात्रा शुरू कर रहा हो या किसी दूसरे स्कूल से ट्रांसफर लेना चाहता हो, हम दिशा परिवार में उनका स्वागत करते हैं।"
+              answer="दिशा इंटरनेशनल स्कूल नर्सरी से लेकर 5वीं कक्षा तक के छात्रों को प्रवेश देता है। हम ICSE आधारित पाठ्यक्रम का पालन करते हैं और सीट उपलब्धता के आधार पर साल भर प्रवेश स्वीकार करते हैं। चाहे आपका बच्चा अभी अपनी शिक्षा यात्रा शुरू कर रहा हो या किसी दूसरे स्कूल से ट्रांसफर लेना चाहता हो, हम दिशा परिवार में उनका स्वागत करते हैं।"
             />
             <FAQItem
               question="मैं स्कूल विजिट या कैंपस टूर कैसे निर्धारित कर सकता हूँ?"
@@ -704,7 +704,7 @@ function App() {
                 <GraduationCap className="w-8 h-8 text-emerald-500" />
                 <div>
                   <h3 className="text-xl font-bold">दिशा इंटरनेशनल स्कूल</h3>
-                  <p className="text-sm text-gray-400">IITian द्वारा संचालित ICSE स्कूल</p>
+                  <p className="text-sm text-gray-400">IITian द्वारा संचालित ICSE पाठ्यक्रम आधारित स्कूल</p>
                 </div>
               </div>
               <p className="text-gray-400 mb-4 leading-relaxed">
