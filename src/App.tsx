@@ -56,7 +56,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-24">
             <div className="flex items-center">
-              <img src="/logo.png" alt="DISHA International School" className="w-72 h-auto max-h-20 object-contain" />
+              <h1 className="text-2xl font-bold text-gray-900">DISHA International School</h1>
             </div>
             <div className="flex items-center gap-4">
               <Button onClick={() => scrollToSection('apply')} variant="primary" size="sm">
@@ -651,7 +651,7 @@ function App() {
             />
             <FAQItem
               question="What age groups and classes do you admit?"
-              answer="DISHA International School admits students from Nursery through Class 5. We follow ICSE-based curriculum and accept admissions throughout the year based on seat availability. Whether your child is just starting their education journey or looking to transfer from another school, we welcome them to the DISHA family."
+              answer="DISHA International School admits students from Nursery to Class 5. We follow ICSE-based curriculum and accept admissions throughout the year based on seat availability. Whether your child is just starting their education journey or looking to transfer from another school, we welcome them to the DISHA family."
             />
             <FAQItem
               question="How can I schedule a school visit or campus tour?"
