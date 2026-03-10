@@ -665,7 +665,7 @@ function App() {
           <div className="space-y-4">
             <FAQItem
               question="गोड्डा में अन्य ICSE स्कूलों से दिशा कैसे अलग है?"
-              answer="दिशा गोड्डा में भारत का पहला IITian-संचालित ICSE स्कूल है। हम IIT ग्रैजुएट्स द्वारा डिज़ाइन किए गए वैज्ञानिक शिक्षण विधियों के साथ ICSE के बेहतर पाठ्यक्रम को जोड़ते हैं। इसके अलावा, हम रोबोटिक्स और AI التدريب प्रशिक्षण, फिंगरप्रिंट टैलेंट एनालिसिस, अबैकस प्रशिक्षण और प्रीमियम हॉस्टल जैसी असाधारण सुविधाएँ प्रदान करते हैं - जो क्षेत्र का कोई अन्य स्कूल नहीं देता है।"
+              answer="दिशा गोड्डा में भारत का पहला IITian-संचालित ICSE स्कूल है। हम IIT ग्रैजुएट्स द्वारा डिज़ाइन किए गए वैज्ञानिक शिक्षण विधियों के साथ ICSE के बेहतर पाठ्यक्रम को जोड़ते हैं। इसके अलावा, हम रोबोटिक्स और AI प्रशिक्षण, फिंगरप्रिंट टैलेंट एनालिसिस, अबैकस प्रशिक्षण और प्रीमियम हॉस्टल जैसी असाधारण सुविधाएँ प्रदान करते हैं - जो क्षेत्र का कोई अन्य स्कूल नहीं देता है।"
             />
             <FAQItem
               question="फिंगरप्रिंट टैलेंट एनालिसिस क्या है और यह मेरे बच्चे की कैसे मदद करता है?"
@@ -743,8 +743,39 @@ function App() {
             </div>
           </div>
 
-          <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-            <p>&copy; 2026 दिशा इंटरनेशनल स्कूल। सभी अधिकार सुरक्षित।</p>
+          <div className="border-t border-gray-800 pt-8">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+              <p className="text-gray-400">&copy; 2026 दिशा इंटरनेशनल स्कूल। सभी अधिकार सुरक्षित।</p>
+              
+              {/* Site Credits */}
+              <div className="bg-white rounded-full px-6 py-3 flex items-center gap-4">
+                <a 
+                  href="https://fabulousmedia.in" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center hover:opacity-80 transition-opacity"
+                >
+                  <img 
+                    src="/fabulous.png" 
+                    alt="Fabulous Media" 
+                    className="h-8 w-auto"
+                  />
+                </a>
+                <div className="w-px h-8 bg-gray-300"></div>
+                <a 
+                  href="https://gocommercially.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center hover:opacity-80 transition-opacity"
+                >
+                  <img 
+                    src="/gocomercially.svg" 
+                    alt="Go Commercially" 
+                    className="h-8 w-auto"
+                  />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </footer >
