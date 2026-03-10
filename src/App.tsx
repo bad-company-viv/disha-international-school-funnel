@@ -97,7 +97,7 @@ function App() {
 
               {/* Subheadline */}
               <p className="text-xl sm:text-2xl text-gray-700 mb-10 leading-relaxed">
-                India's first <span className="text-emerald-600 font-bold">IITian-Led ICSE School</span> in Godda — building future doctors, engineers &amp; innovators.
+                India's first <span className="text-emerald-600 font-bold">IITian-Led ICSE Curriculum-Based School</span> in Godda — building future doctors, engineers &amp; innovators.
               </p>
 
               {/* CTA Buttons */}
@@ -346,7 +346,7 @@ function App() {
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-1" />
-                  <span className="text-gray-900 font-medium">ICSE board – superior English, Math & Science preparation</span>
+                  <span className="text-gray-900 font-medium">ICSE-based curriculum – superior English, Math & Science foundation</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-1" />
@@ -384,8 +384,8 @@ function App() {
             />
             <FeatureCard
               icon={BookOpen}
-              title="ICSE Curriculum"
-              description="Superior board with stronger English, Math & Science foundation. Better prepared for NEET, JEE and international education compared to state boards."
+              title="ICSE-Based Curriculum"
+              description="Superior curriculum with stronger English, Math & Science foundation. Better preparation for future academic success compared to state boards."
             />
             <FeatureCard
               icon={Microscope}
@@ -424,7 +424,7 @@ function App() {
               Limited Seats Available for 2026-27 Academic Year
             </h3>
             <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
-              Don't wait until it's too late. Secure your child's future with India's most innovative ICSE school in Godda.
+              Don't wait until it's too late. Secure your child's future with India's most innovative ICSE curriculum-based school in Godda.
             </p>
             <Button onClick={handleWhatsAppClick} variant="whatsapp" size="lg" className="inline-flex items-center gap-2">
               <MessageCircle className="w-5 h-5" />
@@ -461,9 +461,9 @@ function App() {
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award className="w-8 h-8 text-blue-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">ICSE Board Affiliated</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">ICSE-Based Curriculum</h3>
               <p className="text-gray-600">
-                Officially recognized ICSE curriculum school delivering superior education standards trusted by lakhs of parents across India.
+                Following ICSE curriculum standards for superior education quality, providing strong foundation trusted by parents across India.
               </p>
             </div>
 
@@ -526,9 +526,9 @@ function App() {
               <div className="w-12 h-12 bg-emerald-600 rounded-full flex items-center justify-center mb-4">
                 <BookOpen className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Strong ICSE Foundation</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Strong Academic Foundation</h3>
               <p className="text-gray-700 leading-relaxed">
-                Parents who want their child to have superior English, Math & Science preparation through ICSE board with modern teaching methods.
+                Parents who want their child to have superior English, Math & Science preparation through ICSE-based curriculum with modern teaching methods.
               </p>
             </div>
 
@@ -584,7 +584,7 @@ function App() {
                 </span>
               </h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Every year, hundreds of families across Godda &amp; Jharkhand choose DISHA for its unique IITian mentorship, ICSE curriculum, and modern STEM labs. Seats are limited — don't miss out.
+                Every year, hundreds of families across Godda &amp; Jharkhand choose DISHA for its unique IITian mentorship, ICSE-based curriculum, and modern STEM labs. Seats are limited — don't miss out.
               </p>
 
               <div className="space-y-4 mb-8">
@@ -638,8 +638,8 @@ function App() {
 
           <div className="space-y-4">
             <FAQItem
-              question="What makes DISHA different from other ICSE schools in Godda?"
-              answer="DISHA is India's first IITian-led ICSE school in Godda. We combine ICSE's superior curriculum with scientific teaching methods designed by IIT graduates. Plus, we offer unique advantages like Robotics & AI training, fingerprint-based talent analysis, Abacus training, and premium hostel facilities – features no other school in the region provides."
+              question="What makes DISHA different from other schools in Godda?"
+              answer="DISHA is India's first IITian-led ICSE curriculum-based school in Godda. We follow ICSE-based curriculum with scientific teaching methods designed by IIT graduates. Plus, we offer unique advantages like Robotics & AI training, fingerprint-based talent analysis, Abacus training, and premium hostel facilities – features no other school in the region provides."
             />
             <FAQItem
               question="What is Fingerprint Talent Analysis and how does it help my child?"
@@ -651,7 +651,7 @@ function App() {
             />
             <FAQItem
               question="What age groups and classes do you admit?"
-              answer="DISHA International School admits students from Nursery through Class 5. We follow the ICSE curriculum and accept admissions throughout the year based on seat availability. Whether your child is just starting their education journey or looking to transfer from another school, we welcome them to the DISHA family."
+              answer="DISHA International School admits students from Nursery through Class 5. We follow ICSE-based curriculum and accept admissions throughout the year based on seat availability. Whether your child is just starting their education journey or looking to transfer from another school, we welcome them to the DISHA family."
             />
             <FAQItem
               question="How can I schedule a school visit or campus tour?"
@@ -678,7 +678,7 @@ function App() {
                 <GraduationCap className="w-8 h-8 text-emerald-500" />
                 <div>
                   <h3 className="text-xl font-bold">DISHA INTERNATIONAL SCHOOL</h3>
-                  <p className="text-sm text-gray-400">IITian-Led ICSE School</p>
+                  <p className="text-sm text-gray-400">IITian-Led ICSE Curriculum-Based School</p>
                 </div>
               </div>
               <p className="text-gray-400 mb-4 leading-relaxed">
@@ -718,8 +718,39 @@ function App() {
             </div>
           </div>
 
-          <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-            <p>&copy; 2026 DISHA International School. All rights reserved.</p>
+          <div className="border-t border-gray-800 pt-8">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+              <p className="text-gray-400">&copy; 2026 DISHA International School. All rights reserved.</p>
+              
+              {/* Site Credits */}
+              <div className="bg-white rounded-full px-6 py-3 flex items-center gap-4">
+                <a 
+                  href="https://fabulousmedia.in" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center hover:opacity-80 transition-opacity"
+                >
+                  <img 
+                    src="/fabulous.png" 
+                    alt="Fabulous Media" 
+                    className="h-8 w-auto"
+                  />
+                </a>
+                <div className="w-px h-8 bg-gray-300"></div>
+                <a 
+                  href="https://gocommercially.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center hover:opacity-80 transition-opacity"
+                >
+                  <img 
+                    src="/gocomercially.svg" 
+                    alt="Go Commercially" 
+                    className="h-8 w-auto"
+                  />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </footer >
