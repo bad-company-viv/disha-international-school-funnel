@@ -20,7 +20,6 @@ import { Button } from './components/Button';
 import { FeatureCard } from './components/FeatureCard';
 import { FAQItem } from './components/FAQItem';
 import { TestimonialCard } from './components/TestimonialCard';
-import { LeadForm } from './components/LeadForm';
 
 function App() {
   const [showWhatsAppButton, setShowWhatsAppButton] = useState(false);
@@ -35,9 +34,20 @@ function App() {
   }, []);
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
+    const isMobile = window.innerWidth < 1024;
+    // On mobile, scroll directly to the form; on desktop, scroll to the section
+    const targetId = (id === 'apply' && isMobile) ? 'admission-form' : id;
+    const element = document.getElementById(targetId);
+    
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const offset = isMobile ? -100 : -50; // Small offset for header
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
     }
   };
 
@@ -621,8 +631,35 @@ function App() {
             </div>
 
             {/* Right: Form */}
-            <div>
-              <LeadForm />
+            <div id="admission-form">
+              {/* Form Header */}
+              <div className="bg-gradient-to-r from-emerald-600 to-emerald-500 rounded-t-2xl p-6 text-white text-center">
+                <div className="inline-flex items-center gap-2 bg-white/20 rounded-full px-4 py-1 text-sm font-semibold mb-3">
+                  <span className="w-2 h-2 bg-yellow-300 rounded-full animate-pulse"></span>
+                  Limited Seats — 2026-27 Admissions Open
+                </div>
+                <h3 className="text-2xl font-bold">Get Free Admission Counselling</h3>
+                <p className="text-emerald-100 mt-1 text-sm">Fill your details below — our team will reach out instantly</p>
+              </div>
+              
+              {/* Embedded Form */}
+              <iframe
+                src="https://link.on.bingo/widget/form/Iv5SBiIvGq3UiV2fEjN8"
+                style={{ width: '100%', height: '100%', border: 'none', borderRadius: '0 0 3px 3px' }}
+                id="inline-Iv5SBiIvGq3UiV2fEjN8"
+                data-layout="{'id':'INLINE'}"
+                data-trigger-type="alwaysShow"
+                data-trigger-value=""
+                data-activation-type="alwaysActivated"
+                data-activation-value=""
+                data-deactivation-type="neverDeactivate"
+                data-deactivation-value=""
+                data-form-name="Form 1"
+                data-height="491"
+                data-layout-iframe-id="inline-Iv5SBiIvGq3UiV2fEjN8"
+                data-form-id="Iv5SBiIvGq3UiV2fEjN8"
+                title="Form 1"
+              ></iframe>
             </div>
           </div>
         </div>
