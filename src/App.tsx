@@ -20,7 +20,6 @@ import { Button } from './components/Button';
 import { FeatureCard } from './components/FeatureCard';
 import { FAQItem } from './components/FAQItem';
 import { TestimonialCard } from './components/TestimonialCard';
-import { LeadForm } from './components/LeadForm';
 
 function App() {
   const [showWhatsAppButton, setShowWhatsAppButton] = useState(false);
@@ -35,9 +34,20 @@ function App() {
   }, []);
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
+    const isMobile = window.innerWidth < 1024;
+    // On mobile, scroll directly to the form; on desktop, scroll to the section
+    const targetId = (id === 'apply' && isMobile) ? 'admission-form' : id;
+    const element = document.getElementById(targetId);
+    
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const offset = isMobile ? 150 : 80; // Extra offset on mobile to show form
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
     }
   };
 
@@ -640,8 +650,35 @@ function App() {
             </div>
 
             {/* Right: Form */}
-            <div>
-              <LeadForm />
+            <div id="admission-form">
+              {/* Form Header */}
+              <div className="bg-gradient-to-r from-emerald-600 to-emerald-500 rounded-t-2xl p-6 text-white text-center">
+                <div className="inline-flex items-center gap-2 bg-white/20 rounded-full px-4 py-1 text-sm font-semibold mb-3">
+                  <span className="w-2 h-2 bg-yellow-300 rounded-full animate-pulse"></span>
+                  सीमित सीटें — 2026-27 प्रवेश प्रारंभ
+                </div>
+                <h3 className="text-2xl font-bold">नि:शुल्क एडमिशन काउंसलिंग प्राप्त करें</h3>
+                <p className="text-emerald-100 mt-1 text-sm">नीचे अपना विवरण भरें — हमारी टीम आपसे तुरंत संपर्क करेगी</p>
+              </div>
+              
+              {/* Embedded Form */}
+              <iframe
+                src="https://link.on.bingo/widget/form/yGGau2LE5YJUA6ZiH9f0"
+                style={{ width: '100%', height: '750px', border: 'none', borderRadius: '0 0 3px 3px' }}
+                id="inline-yGGau2LE5YJUA6ZiH9f0"
+                data-layout="{'id':'INLINE'}"
+                data-trigger-type="alwaysShow"
+                data-trigger-value=""
+                data-activation-type="alwaysActivated"
+                data-activation-value=""
+                data-deactivation-type="neverDeactivate"
+                data-deactivation-value=""
+                data-form-name="Form 0"
+                data-height="491"
+                data-layout-iframe-id="inline-yGGau2LE5YJUA6ZiH9f0"
+                data-form-id="yGGau2LE5YJUA6ZiH9f0"
+                title="Form 0"
+              ></iframe>
             </div>
           </div>
         </div>
